@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+	<title>Minimum Payment Test</title>
+	<script src="//d3js.org/d3.v3.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+</head>
+
+<body ng-app="MinPaymentApp">
+	<div ng-controller="MinPaymentController">
+		<label>Balance:</label>
+		<input type="number" ng-model="balance" placeholder="Enter balance">
+		</br>
+
+		<label>Payment amount:</label>
+		<input type="number" ng-model="payment" placeholder="Enter payment amount">
+		<button ng-click="computeCost()" ng-model="calculate">Calculate</button>
+
+		<script src="js/min_payment_vizu.js"></script>
+		<script src="js/min_payment_ctrl.js"></script>
+	</div>
+</body>
