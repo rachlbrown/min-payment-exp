@@ -13,9 +13,19 @@
 		<input type="number" ng-model="balance" placeholder="Enter balance">
 		</br>
 
-		<label>Payment amount:</label>
-		<input type="number" ng-model="payment" placeholder="Enter payment amount">
-		<button ng-click="computeCost()" ng-model="calculate">Calculate</button>
+		<label>Minimum payment:</label>
+		<input type="number" ng-model="minPay" placeholder="Enter payment amount">
+		</br>
+
+		<label>APR:</label>
+		<input type="number" ng-model="apr" placeholder="Enter APR">
+		</br>
+
+		<label>Extra Payment:</label>
+		<input type="number" ng-model="extraPay" placeholder="Enter extra payment">
+		</br>
+
+		<button ng-click="updateVizu()" ng-model="calculate">Calculate</button>
 
 		<script src="js/min_payment_vizu.js"></script>
 		<script src="js/min_payment_ctrl.js"></script>
